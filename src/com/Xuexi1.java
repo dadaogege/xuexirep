@@ -13,6 +13,7 @@ public class Xuexi1{
 	   thread3.start();
 	   
 	   //System.exit(-1);
+	   
    }
    public static class RunableWork1 implements Runnable{
        public HashMap map=null;
@@ -52,7 +53,7 @@ public class Xuexi1{
 				for (int j = 0; j < 50; j++) {
 					System.out.println("3:"+String.valueOf(j));
 				}
-				map.notifyAll();
+				map.notifyAll();//////////////////////////////////////////
 			}	
 		}		   
     }
