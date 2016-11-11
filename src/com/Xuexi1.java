@@ -1,5 +1,4 @@
 package com;
-
 import java.util.HashMap;
 
 public class Xuexi1{
@@ -13,6 +12,7 @@ public class Xuexi1{
 	   thread3.start();
 	   
 	   //System.exit(-1);
+///////////////////////////////////////////////////////////////////////////////
    }
    public static class RunableWork1 implements Runnable{
        public HashMap map=null;
