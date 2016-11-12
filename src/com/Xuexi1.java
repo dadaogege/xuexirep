@@ -13,6 +13,7 @@ public class Xuexi1{
 	   
 	   //System.exit(-1);
 	
+<<<<<<< HEAD
    }
    public static class RunableWork1 implements Runnable{
        public HashMap map=null;
@@ -57,3 +58,52 @@ public class Xuexi1{
 		}		   
     }
 }
+=======
+   }
+   public static class RunableWork1 implements Runnable{
+       public HashMap map=null;
+	   public RunableWork1(HashMap map) {
+		   this.map = map;
+	   }
+	@Override
+	public void run() {
+		xuexi();
+	}
+	public void xuexi(){
+		synchronized (map) {	
+			for (int j = 0; j < 50; j++) {
+				System.out.println("1:"+String.valueOf(j));
+				if(j==30)
+					try {
+						map.wait();
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+			}
+		}
+	}
+	   
+   }
+   public static class RunableWork3 implements Runnable{
+	   public HashMap map=null;
+	   public RunableWork3(HashMap map) {
+		   this.map = map;
+	   }
+		@Override
+		public void run() {
+			xuexi();
+		}
+		public  void xuexi(){
+			synchronized (map) {				
+				for (int j = 0; j < 50; j++) {
+					System.out.println("3:"+String.valueOf(j));
+				}
+				map.notifyAll();//////////////////////////////////////////weiwiewiweiweiweiwiewei
+				//////////////////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@1234566
+				/////////////////////////////////////////////////
+				///////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+				}	
+		}		   
+    }
+}
+>>>>>>> refs/remotes/origin/master
