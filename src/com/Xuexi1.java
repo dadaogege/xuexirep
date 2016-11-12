@@ -12,8 +12,6 @@ public class Xuexi1{
 	   thread3.start();
 	   
 	   //System.exit(-1);
-	
-<<<<<<< HEAD
    }
    public static class RunableWork1 implements Runnable{
        public HashMap map=null;
@@ -58,7 +56,6 @@ public class Xuexi1{
 		}		   
     }
 }
-=======
    }
    public static class RunableWork1 implements Runnable{
        public HashMap map=null;
@@ -106,4 +103,3 @@ public class Xuexi1{
 		}		   
     }
 }
->>>>>>> refs/remotes/origin/master
