@@ -45,7 +45,7 @@ public class Xuexi1{
 	   }
 		@Override
 		public void run() {
-			xuexi();
+			xuexi();////@@@@@@@@@@@@
 		}
 		public  void xuexi(){
 			synchronized (map) {				
