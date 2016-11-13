@@ -1,6 +1,6 @@
 package com;
 import java.util.HashMap;
-
+//123
 public class Xuexi1{
    public static void main(String[] args) {
 	   HashMap map1 = new HashMap();
